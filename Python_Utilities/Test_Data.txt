@@ -1,0 +1,10 @@
+Movie		IMDB	Sentiment	Theatres
+Avengers  	 8.9	0.21		4662
+JungleBook 	 7.4	0.31		4285
+Zootopia  	 8		0.31		3827
+ladybird  	 7.4	0.48		791
+
+Avengers Endgame Actual: $357.12m	 High
+Jungle Book Actual: 	 $103.26m	 High
+Zootopia Actual: 		 $ 75.06m    Medium
+Lady Bird Actual: 		 $  5.40m    Low

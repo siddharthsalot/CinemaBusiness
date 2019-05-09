@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+      <a class="navbar-brand ml-4" href="/">Logo Validator</a>
+    </nav>
+  </header>
+  <br /><br /><br />
+  <form method="POST" action="" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="picture">Select a logo file for validation</label>
+      <input class="form-control-file" (change)="onFileChanged($event)" id="picture" name="picture" type="file">
+    </div>
+    <div class="form-group">
+      <input class="btn btn-outline-info" id="submit" name="submit" type="button" (click)="onUpload()" value="Submit">
+    </div>
+  </form>
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>Error message goes here</p>
+      </div>
+    </div>
+  </main>
+  <hr />
+  <div *ngIf="selectedFile">
+    <hr />
+    <h5>What is it = <b>{{label}}</b></h5>
+    <h5>Likelihood Score = <b>{{score}}</b></h5>
+  </div>
+</div>
+<router-outlet></router-outlet>
